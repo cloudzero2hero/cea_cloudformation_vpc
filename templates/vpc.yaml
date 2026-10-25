@@ -121,3 +121,30 @@ Resources:
     Properties:
       SubnetId: !Ref PublicSubnet2B
       RouteTableId: !Ref PublicRouteTable
+
+
+  # Bastion Host EC2
+  BastionHost:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t3.micro
+      KeyName: bastionhost
+      ImageId: ami-06cdac14c9c4da91b
+      SubnetId: !Ref PublicSubnet1A
+      SecurityGroupIds: 
+        - !Ref BastionSG
+      Tags:
+        - Key: Name
+          Value: BastionHost
+
+  # Bastion Security Group
+  BastionSG:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: 'Enable SSH access'
+      VpcId: !Ref MyVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 81.109.132.40/32

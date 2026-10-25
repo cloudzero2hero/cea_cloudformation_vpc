@@ -43,3 +43,16 @@
 ### Validation
 - Pending template validation.
 - Deployment not yet performed.
+
+## Stage 4 - Add the bastion EC2 instance and SSH security controls
+
+### Implemented
+- Add security groups and EC2 instances.
+
+### Outstanding
+
+- Add two application EC2 instances and their security groups.
+
+### Validation
+- Pending template validation.
+- Deployment not yet performed.
