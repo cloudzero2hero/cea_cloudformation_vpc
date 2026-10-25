@@ -16,3 +16,17 @@
 ### Validation
 - Pending template validation.
 - Deployment not yet performed.
+
+## Stage 2 - Add public adn private subnets
+
+### Implemented
+- Create public and private subnets.
+
+### Outstanding
+
+- Configure internet connectivity.
+- Add security groups and EC2 instances.
+
+### Validation
+- Pending template validation.
+- Deployment not yet performed.
