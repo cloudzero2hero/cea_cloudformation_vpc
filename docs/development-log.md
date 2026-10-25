@@ -69,3 +69,15 @@
 ### Validation
 - Pending template validation.
 - Deployment not yet performed.
+
+## Stage 6 - Deployment of template in VS code
+
+### Implemented
+- After validating the template and deploying, requires pending validation compelted with resources in AWS.
+- AWS shows resources created with correct networking as per the deployed code.
+
+### Outstanding
+
+### Validation
+- Template validated.
+- Deployment successful in AWS.
