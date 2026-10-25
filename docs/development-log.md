@@ -56,3 +56,16 @@
 ### Validation
 - Pending template validation.
 - Deployment not yet performed.
+
+## Stage 5 - Add two application EC2 instances and their security groups
+
+### Implemented
+- Add two application EC2 instances and their security groups.
+
+### Outstanding
+
+- Validate the template & deploy
+
+### Validation
+- Pending template validation.
+- Deployment not yet performed.
